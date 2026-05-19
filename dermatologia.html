@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <title>VitaCare</title>
+</head>
+<body class="bg-white text-dark font-sans">
+  
+  <nav class="fixed top-0 w-full z-50 bg-white border-b border-gray-200 h-20 md:h-26">
+  
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-full flex items-center justify-between relative">
+    
+    <div class="flex-1"></div>
+
+    <div class="absolute left-1/2 -translate-x-1/2">
+      <a href="index.html">
+        <img src="./src/assets/logo.svg" alt="VitaCare" class="h-8 md:h-10">
+      </a>
+    </div>
+
+    <div class="flex-1 flex justify-end">
+      <button id="menu-btn" class="hover:opacity-50 transition-opacity focus:outline-none">
+        <img src="./src/assets/menu.svg" alt="Menu" class="h-7 w-7 md:h-8 md:w-8">
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden fixed top-[80px] md:top-[104px] right-0 w-full sm:w-[400px] h-[calc(100vh-80px)] md:h-[calc(100vh-104px)] bg-white z-[40] p-10 flex flex-col shadow-[-10px_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100 animate-in slide-in-from-right duration-300">
+    
+    <div class="flex justify-end mb-10">
+      <button id="close-btn" class="w-10 h-10 bg-gray-50 text-gray-400 rounded-full flex items-center justify-center text-[12px] transition-all duration-300 hover:bg-gray-200 hover:text-gray-700 hover:scale-105 active:scale-95 focus:outline-none">
+        ✕
+      </button>
+    </div>
+
+    <div class="flex flex-col gap-6 md:gap-7 items-center text-center">
+      <a href="wizyta.html" class="text-2xl md:text-[30px] font-bold text-[#1A1A1A] hover:text-[#2F80ED] transition-colors">Umów wizytę</a>
+      <a href="kardiologia.html" class="text-2xl md:text-[30px] font-bold text-[#1A1A1A] hover:text-[#2F80ED] transition-colors">Kardiologia</a>
+      <a href="dermatologia.html" class="text-2xl md:text-[30px] font-bold text-[#1A1A1A] hover:text-[#2F80ED] transition-colors">Dermatologia</a>
+      <a href="ortopedia.html" class="text-2xl md:text-[30px] font-bold text-[#1A1A1A] hover:text-[#2F80ED] transition-colors">Ortopedia</a>
+      <a href="medycyna.html" class="text-2xl md:text-[30px] font-bold text-[#1A1A1A] hover:text-[#2F80ED] transition-colors">Medycyna estetyczna</a>
+      <a href="cennik.html" class="text-2xl md:text-[30px] font-bold text-[#1A1A1A] hover:text-[#2F80ED] transition-colors">Cennik</a>
+    </div>
+  </div>
+</nav>
+
+<div class="h-20 md:h-26"></div>
+
+<main class="bg-[#F7F9FC] min-h-screen py-10 px-4">
+  <div class="max-w-[1200px] mx-auto">
+    
+    <h1 class="text-[48px] md:text-[64px] font-bold text-center text-[#1A1A1A] mb-12 md:mb-16">
+      Dermatologia
+    </h1>
+
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
+      
+      <div class="md:w-3/5 text-center md:text-left"> 
+        <p class="text-[24px] md:text-[36px] font-bold leading-[1.2] text-[#1A1A1A]">
+         Specjalistyczna opieka dermatologiczna dla dorosłych pacjentów. Oferujemy kompleksową diagnostykę oraz leczenie chorób skóry, włosów i paznokci, w oparciu o nowoczesne metody terapii oraz doświadczenie naszych lekarzy.
+        </p>
+      </div>
+
+      <div class="md:w-2/5 w-full flex justify-center md:justify-end">
+        <div class="relative w-full max-w-[320px] md:max-w-[381px] aspect-[381/572] rounded-[24px] overflow-hidden shadow-sm mx-auto md:mx-0">
+          <img 
+            src="./src/assets3/Picture3.webp" 
+            alt="Dermatologia" 
+            class="w-full h-full object-cover"
+          >
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<section id="dlaczego-my" class="bg-[#FFFFFF] py-10 md:py-16">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-10">
+    
+    <h2 class="text-4xl md:text-5xl lg:text-[64px] font-bold text-[#1A1A1A] text-center mb-10 md:mb-16 tracking-tight leading-none">
+      Zakres usług
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-[1200px] mx-auto">
+      
+      <div class="flex items-center justify-center bg-[#2F80ED]/[0.32] rounded-[20px] md:rounded-[30px] px-6 md:px-10 py-6 md:py-12 shadow-sm transition-transform hover:scale-[1.01]">
+        <span class="text-2xl md:text-4xl font-bold text-[#1A1A1A] mr-4 md:mr-6"></span>
+        <p class="text-xl md:text-2xl lg:text-[32px] font-bold text-[#1A1A1A] leading-tight">Konsultacje dermatologiczne</p>
+      </div>
+
+      <div class="flex items-center justify-center bg-[#2F80ED]/[0.32] rounded-[20px] md:rounded-[30px] px-6 md:px-10 py-6 md:py-12 shadow-sm transition-transform hover:scale-[1.01]">
+        <span class="text-2xl md:text-4xl font-bold text-[#1A1A1A] mr-4 md:mr-6"></span>
+        <p class="text-xl md:text-2xl lg:text-[32px] font-bold text-[#1A1A1A] leading-tight">Leczenie trądziku</p>
+      </div>
+
+      <div class="flex items-center justify-center bg-[#2F80ED]/[0.32] rounded-[20px] md:rounded-[30px] px-6 md:px-10 py-6 md:py-12 shadow-sm transition-transform hover:scale-[1.01]">
+        <span class="text-2xl md:text-4xl font-bold text-[#1A1A1A] mr-4 md:mr-6"></span>
+        <p class="text-xl md:text-2xl lg:text-[32px] font-bold text-[#1A1A1A] leading-tight">Usuwanie zmian skórnych</p>
+      </div>
+
+      <div class="flex items-center justify-center bg-[#2F80ED]/[0.32] rounded-[20px] md:rounded-[30px] px-6 md:px-10 py-6 md:py-12 shadow-sm transition-transform hover:scale-[1.01]">
+        <span class="text-2xl md:text-4xl font-bold text-[#1A1A1A] mr-4 md:mr-6"></span>
+        <p class="text-xl md:text-2xl lg:text-[32px] font-bold text-[#1A1A1A] leading-tight">Diagnostyka zmian skórnych</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#F7F9FC] min-h-screen py-10 px-4">
+  <div class="max-w-[1200px] mx-auto">
+    
+    <h1 class="text-[48px] md:text-[64px] font-bold text-center text-[#1A1A1A] mb-12 md:mb-16">
+      Nasz zespół
+    </h1>
+
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16">
+      
+      <div class="md:w-2/5 flex flex-col items-center shrink-0 w-full text-center">
+        <div class="relative w-full max-w-[320px] md:max-w-[381px] aspect-[381/500] md:aspect-[381/572] rounded-[24px] overflow-hidden shadow-sm mx-auto">
+          <img 
+            src="./src/assets3/Picture7.webp" 
+            alt="dr hab. n med. Małgorzata Dębowska Dermatolog" 
+            class="w-full h-full object-cover"
+          >
+        </div>
+        <p class="mt-5 text-xl md:text-2xl font-bold text-[#1A1A1A] leading-tight">
+        dr hab. n med. Małgorzata Dębowska<br>
+        <span class="font-bold text-lg md:text-xl">Dermatolog</span>
+        </p>
+      </div>
+
+      <div class="md:w-3/5 text-center md:text-left"> 
+        <p class="text-[20px] md:text-[28px] lg:text-[32px] font-bold leading-[1.3] text-[#1A1A1A]">
+         Dr hab. n med. Małgorzata Dębowska jest wybitną specjalistką w dziedzinie dermatologii i wenerologii z wieloletnim stażem klinicznym. W swojej codziennej praktyce skupia się na kompleksowym leczeniu chorób skóry, włosów i paznokci, kładąc szczególny nacisk na wczesną diagnostykę zmian nowotworowych oraz nowoczesne metody leczenia trądziku.
+        </p>
+      </div>
+
+    </div> 
+</div> 
+</section>
+
+<footer class="bg-[#EEEEEE] py-10">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-10">
+    
+    <div class="flex flex-col md:grid md:grid-cols-3 items-center gap-8 mb-10">
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 md:gap-8 text-[16px] md:text-[18px] font-medium text-[#1A1A1A]/80 order-2 md:order-1">
+        <a href="mailto:vitacare@gmail.com" class="flex items-center gap-2 hover:text-[#1A1A1A] transition-colors whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 9l9 6l9 -6l-9 -6l-9 6" /><path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 19l6 -6" /><path d="M15 13l6 6" /></svg>
+          vitacare@gmail.com
+        </a>
+        <a href="tel:+48777666555" class="flex items-center gap-2 hover:text-[#1A1A1A] transition-colors whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /><path d="M15 7a2 2 0 0 1 2 2" /><path d="M15 3a6 6 0 0 1 6 6" /></svg>
+          +48 777 666 555
+        </a>
+      </div>
+
+      <div class="flex justify-center items-center order-1 md:order-2">
+        <a href="#">
+          <img 
+            src="./src/assets/logo.svg" 
+            alt="VitaCare - Strona Główna" 
+            class="h-[32px] md:h-[40px] w-auto object-contain"
+          >
+        </a>
+      </div>
+
+      <div class="flex items-center justify-center md:justify-end gap-6 order-3">
+        <a href="#" aria-label="Odwiedź nasz profil na Facebooku" class="w-10 h-10 md:w-11 md:h-11 border-2 border-[#1A1A1A]/40 rounded-full flex items-center justify-center hover:bg-[#1A1A1A] hover:text-white transition-all text-[#1A1A1A]/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+        </a>
+        <a href="#" aria-label="Odwiedź nasz profil na Twitterze" class="w-10 h-10 md:w-11 md:h-11 border-2 border-[#1A1A1A]/40 rounded-full flex items-center justify-center hover:bg-[#1A1A1A] hover:text-white transition-all text-[#1A1A1A]/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.751 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013l0 .001" /></svg>
+        </a>
+        <a href="#" aria-label="Odwiedź nasz profil na Instagramie" class="w-10 h-10 md:w-11 md:h-11 border-2 border-[#1A1A1A]/40 rounded-full flex items-center justify-center hover:bg-[#1A1A1A] hover:text-white transition-all text-[#1A1A1A]/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="text-center text-[14px] md:text-[16px] text-[#1A1A1A]/60 font-medium">
+      © VitaCare 2026. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+<script>
+    const openBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    openBtn.addEventListener('click', () => {
+      menu.classList.remove('hidden');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      menu.classList.add('hidden');
+    });
+
+    const links = menu.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
